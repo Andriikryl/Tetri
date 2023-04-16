@@ -2,6 +2,7 @@ import Borad from "./Borad";
 import { useBoard } from "../hooks/useBoard";
 import GameStats from "./GameStats";
 import { useGameStats } from "../hooks/useGameStats";
+import Previews from "./Previews";
 
 const Tetris = ({ rows, columns, setGameOver }) => {
   const [gameStats, addLinesCleared] = useGameStats();
