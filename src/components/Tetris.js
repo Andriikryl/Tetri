@@ -7,10 +7,13 @@ const Tetris = ({ rows, columns, setGameOver }) => {
   const [gameStats, addLinesCleared] = useGameStats();
   const [board, setBoard] = useBoard({ rows, columns });
 
+  const player = { tetrominoes: [] };
+
   return (
     <div className="Tetris">
       <Borad board={board} />;
       <GameStats gameStats={gameStats} />
+      <Previews tetrominoes={player.tetrominoes} />
     </div>
   );
 };
